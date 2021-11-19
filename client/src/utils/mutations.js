@@ -1,5 +1,13 @@
 import { gql } from '@apollo/client';
 
+//* execute the loginUser mutation set up using Apollo Server.
+
+export const LOGIN_USER = gql`
+
+
+`;
+
+//* execute addUser mutation
 export const ADD_USER = gql`
     mutation addUser($userName: String!, $email: String!, password: String!) {
         addUser(userName: $userName, email: $email, password: $password) {
@@ -20,6 +28,22 @@ export const ADD_USER = gql`
     }
 
 `;
+
+
+//* execute removeBook function
+export const SAVE_BOOK = gql`
+
+
+
+`;
+
+//* execute removeBook mutation
+export const SAVE_BOOK = gql`
+
+
+
+`;
+
 
 
 //* FOR REFERENCE ONLY
